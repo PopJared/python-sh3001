@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools >= 65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sh3001"
+version = "0.0.1"
+dependencies = [
+  "RPi.GPIO",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "SunFounder", email = "service@sunfounder.com"},
+]
+maintainers = [
+  {name = "Jared Lin", email = "jaredl@126.com"}
+]
+description = "GPIO Library for Raspberry Pi"
+readme = "README.md"
+license = {text = "GNU"}
+keywords = ["python raspberry pi GPIO sunfounder"]
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: GNU License",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.2",
+  "Programming Language :: Python :: 3.3",
+  "Programming Language :: Python :: 3.4",
+]
+
+[tool.setuptools.packages.find]
+exclude = [
+  "contrib",
+  "docs",
+  "tests*",
+]
+namespaces = false
+
+[project.urls]
+Homepage = "https://github.com/sunfounder-ezblock/ezb-pi"
